@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link type="text/css" href="./css/style.css" rel="stylesheet" >
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <br>
+<div class="container" >
+    <div class="card" id="cont_card">
+        <h5 class="card-header">Calculadora by Dylan Aponte</h5>
+        <div class="card-body">
+
+            <!-- Alert -->
+            <div class="container" id="alertCal">
+                
+            </div>
+            
+
+            
+          <h5 class="card-title">Ingresa los valores a calcular </h5>
+          
+             <div class="row">
+                <!-- col img --->
+                <div class="col-md-7">
+                    <img src="./img/calculater.gif" alt="Calculator" id="calculadora_img">
+                </div>
+                 <!-- col function --->
+                <div class="col-md-3 func">
+                    <div>
+                        <form>
+                        <div class="input-group">
+                            <div class="input-group-text" id="btnGroupAddon">1</div>
+                            <input type="text" class="form-control" placeholder="Ingresar primer numero" id="primerNumber" >
+                            
+                        </div>
+                        <br><div class="input-group">
+                            <div class="input-group-text" id="btnGroupAddon">2</div>
+                            <input type="text" class="form-control" placeholder="Ingresar segundo numero" id="segundoNumber">
+                            
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                <div class="col-md-2 func">
+                    <button type="button" onclick="sumar()" class="btn btn-primary btn-lg"><i class="bi bi-plus-square-fill"></i></button>
+                    <br><br><button type="button" onclick="restar()" class="btn btn-success btn-lg"><i class="bi bi-dash-circle-fill"></i></button>
+                    <br><br><button type="button" onclick="multy()" class="btn btn-info btn-lg"><i class="bi bi-asterisk"></i></button>
+                    <br><br><button type="button" onclick="divi()" class="btn btn-dark btn-lg"><i class="bi bi-slash"></i></button>
+                </div>
+             </div> <!-- end row --->
+
+
+        </div>
+      </div>
+</div> <!-- Container-->
+<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
